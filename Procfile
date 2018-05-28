@@ -1,1 +1,1 @@
-web: gunicorn Self-Rep.wsgi
+web: gunicorn selfrep.wsgi
