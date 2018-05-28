@@ -1,0 +1,21 @@
+{
+  "name": "Self-Rep",
+  "description": "A self replicating app",
+  "repository": "https://github.com/josh95/Self-Rep",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["python", "django", "static"]
+
+  "env": {
+    "DJANGO_SECRET_KEY": {
+      "description": "A randomly generated secret to secure your Django installation",
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "newrelic:wayne",
+    "heroku-redis:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate --noinput"
+  }
+}
