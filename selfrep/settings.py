@@ -34,7 +34,7 @@ SECRET_KEY = '3yh5dzg*)zot!=f^aw_iprkmy=-k-h!jgvxrj(=g#8u-dfs6n2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["selfrepjosh.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1","selfrepjosh.herokuapp.com"]
 
 
 # Application definition
