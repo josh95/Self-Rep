@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    #path('sheeteditor/', views.sheetEditor, name='sheetedit'),
+    path('', views.main, name='main'),
+    path('callback', views.callback, name='callback'),
 ]

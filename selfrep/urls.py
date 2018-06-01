@@ -19,6 +19,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('callback/', include('callbackhandler.urls')),
     path('', include('launcher.urls'))
 ]

@@ -1,14 +1,31 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <p>
-      Well, hello there!
-    </p>
-    <p>
-      We're going to now talk to the GitHub API. Ready?
-      <a href="https://github.com/login/oauth/authorize?scope=user:email,repo&client_id=9f81a88b0163d675a0b0">Click here</a> to begin!</a>
-    </p>
+{% extends "base.html" %}
+{% block content %}
+    <h3 class = "text-white bg-secondary p-3 mb-4">
+      Welcome to Josh's Self Replication App.
+    </h3>
+	<div class = "row">
+		<div class = "col-md-1">
+		</div>
+		<div class = "col-md-10">
+			<div>
+			  If you already have a Github account, you can:
+			  
+			  <a href="https://github.com/login/oauth/authorize?scope=user:email,repo&client_id={{clientID}}">
+				<button type="button" class="btn btn-primary">
+					Fork into your Repository
+				</button>
+			  </a>
+			</div>
+			<div>
+				If you don't have an account: 
+				<a href = "https://github.com/join">
+					<button type="button" class="btn btn-primary">
+						Sign up Here
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	
 
-  </body>
-</html>
+{% endblock %}
